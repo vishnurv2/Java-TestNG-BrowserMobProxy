@@ -113,7 +113,7 @@ public class SampleBM {
         Har har = proxy.getHar();
 
         try {
-            har.writeTo(new File("har_files/"+proxy.getPort()+"homepage.har"));
+            har.writeTo(new File(proxy.getPort()+"homepage.har"));
         } catch (IOException e1) {
             e1.printStackTrace();
         }
