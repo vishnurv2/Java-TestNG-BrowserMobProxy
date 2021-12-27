@@ -86,7 +86,7 @@ public class SampleBM {
         capabilities.setCapability("browserName", browser);
         capabilities.setCapability("version", version);
         capabilities.setCapability("platform", platform);
-
+        capabilities.setCapability("build","BMProxy Sample");
         capabilities.setCapability("tunnel",true);
         capabilities.setCapability("tunnelName",portn);
 
