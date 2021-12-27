@@ -14,40 +14,40 @@
     </test>
 
 
-<!--    <test name="Win 8">-->
-<!--        <parameter name="browser" value="chrome"/>-->
-<!--        <parameter name="version" value="88.0"/>-->
-<!--        <parameter name="platform" value="Windows 8"/>-->
-<!--        <classes>-->
-<!--            <class name="SampleBM"/>-->
-<!--        </classes>-->
-<!--    </test>-->
+    <test name="Win 8">
+        <parameter name="browser" value="chrome"/>
+        <parameter name="version" value="88.0"/>
+        <parameter name="platform" value="Windows 8"/>
+        <classes>
+            <class name="SampleBM"/>
+        </classes>
+    </test>
 
-<!--    <test name="3">-->
-<!--        <parameter name="browser" value="chrome"/>-->
-<!--        <parameter name="version" value="88.0"/>-->
-<!--        <parameter name="platform" value="Windows 10"/>-->
-<!--        <classes>-->
-<!--            <class name="SampleBM"/>-->
-<!--        </classes>-->
-<!--    </test>-->
+    <test name="3">
+        <parameter name="browser" value="chrome"/>
+        <parameter name="version" value="88.0"/>
+        <parameter name="platform" value="Windows 10"/>
+        <classes>
+            <class name="SampleBM"/>
+        </classes>
+    </test>
 
 
-<!--    <test name="4">-->
-<!--        <parameter name="browser" value="chrome"/>-->
-<!--        <parameter name="version" value="87.0"/>-->
-<!--        <parameter name="platform" value="Windows 10"/>-->
-<!--        <classes>-->
-<!--            <class name="SampleBM"/>-->
-<!--        </classes>-->
-<!--    </test>-->
+    <test name="4">
+        <parameter name="browser" value="chrome"/>
+        <parameter name="version" value="87.0"/>
+        <parameter name="platform" value="Windows 10"/>
+        <classes>
+            <class name="SampleBM"/>
+        </classes>
+    </test>
 
-<!--    <test name="5">-->
-<!--        <parameter name="browser" value="chrome"/>-->
-<!--        <parameter name="version" value="89.0"/>-->
-<!--        <parameter name="platform" value="Windows 10"/>-->
-<!--        <classes>-->
-<!--            <class name="SampleBM"/>-->
-<!--        </classes>-->
-<!--    </test>-->
+    <test name="5">
+        <parameter name="browser" value="chrome"/>
+        <parameter name="version" value="89.0"/>
+        <parameter name="platform" value="Windows 10"/>
+        <classes>
+            <class name="SampleBM"/>
+        </classes>
+    </test>
 </suite>
