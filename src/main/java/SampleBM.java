@@ -28,6 +28,9 @@ public class SampleBM {
     public RemoteWebDriver driver;
     public BrowserMobProxy proxy;
     Tunnel t;
+    public String username = System.getenv("LT_USERNAME");
+    public String accesskey = System.getenv("LT_ACCESS_KEY");
+    public String gridURL = "@hub.lambdatest.com/wd/hub";
 
     @org.testng.annotations.Parameters(value = {"browser", "version", "platform"})
     @BeforeTest
@@ -56,8 +59,8 @@ public class SampleBM {
 
         t = new Tunnel();
         HashMap<String, String> options = new HashMap<String, String>();
-        options.put("user", "username");
-        options.put("key", "accesskey");
+        options.put("user", username);
+        options.put("key", accesskey);
         options.put("proxyHost",hostIp);
         options.put("proxyPort", portn);
         options.put("ingress-only", "--ingress-only");          //mandatory while using BM proxy
@@ -87,7 +90,7 @@ public class SampleBM {
         capabilities.setCapability("tunnel",true);
         capabilities.setCapability("tunnelName",portn);
 
-        driver = new RemoteWebDriver(new URL("https://username:accesskey@hub.lambdatest.com/wd/hub"),capabilities);
+        driver = new RemoteWebDriver(new URL("https://"+username+":"+accesskey+gridURL),capabilities);
     }
 
     @Test
@@ -110,7 +113,7 @@ public class SampleBM {
         Har har = proxy.getHar();
 
         try {
-            har.writeTo(new File("D://Harfiles//"+proxy.getPort()+"homepage.har"));
+            har.writeTo(new File("har_files/"+proxy.getPort()+"homepage.har"));
         } catch (IOException e1) {
             e1.printStackTrace();
         }
