@@ -27,8 +27,8 @@ public class SampleBM {
     public static RemoteWebDriver driver;
     public static BrowserMobProxy proxy;
     public static Tunnel t;
-    public String username = "vishnurv2";
-    public String accesskey = "2dEK8rin7XC3cChRqccFoMlcC9FwPNloQdqV9c4y7vFUAnAB18";
+    public String username = System.getenv("LT_USERNAME");
+    public String accesskey = System.getenv("LT_ACCESS_KEY");
     public String gridURL = "@hub.lambdatest.com/wd/hub";
 
     public static String  portn;
@@ -107,10 +107,10 @@ public class SampleBM {
 
         proxy.newHar("HomePage");
 
-        driver.get("https://www.google.com/");
-        driver.findElement(By.name("q")).sendKeys("LambdaTest");
-        driver.findElement(By.name("q")).sendKeys(Keys.ENTER);
-        Thread.sleep(5000);
+//        driver.get("https://www.google.com/");
+//        driver.findElement(By.name("q")).sendKeys("LambdaTest");
+//        driver.findElement(By.name("q")).sendKeys(Keys.ENTER);
+//        Thread.sleep(5000);
 
         driver.get("https://lambdatest.com");
 
